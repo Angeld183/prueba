@@ -1,0 +1,44 @@
+<h1 style="text-align: center;">Modificacion de trabajador</h1>
+
+<!--inicio del formulario-->
+<form class="form-group ">
+
+    <div class="form-group">
+    <!--inicio de seccion nombre-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre" class="form-control"[(ngModel)]="cuadroNombre">
+    <!--fin de seccion nombre-->
+    </div>
+
+    <div class="form-group">
+    <!--seccion de apellido-->
+        <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="apellido" class="form-control"[(ngModel)]="cuadroApellido">
+        <!--seccion de seccion apellido-->
+        </div>
+        <!--seccion cargo-->
+        <div class="form-group">
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" id="cargo" placeholder="cargo" class="form-control"[(ngModel)]="cuadroCargo">
+        <!--fin de seccion Cargo-->
+        </div>
+        
+        <div class="form-group">
+        <!--inicio de seccion Salario-->
+            <label for="salario">Salario:</label>
+            <input type="text" name="salario" id="salario" placeholder="salario" class="form-control"[(ngModel)]="cuadroSalario">
+        <!--fin de seccion Salario-->
+        </div>
+        <!--boton-->
+        <div class="col">
+        <button type="submit" class="btn btn-primary" (click)="actualizaEmpleado()" style="margin-top: 35px;">Actualizar</button>
+        <!-- <button type="submit" class="btn btn-primary" (click)="eliminarEmpleado()" style="margin-top: 35px; margin-left: 20px;">Eliminar</button> -->
+            
+        </div>
+        
+            
+            
+        </form>
+<div style="text-align: center;">
+    <button class="btn btn-primary" (click)="volverHome()">Regresar a la lista</button>
+</div>

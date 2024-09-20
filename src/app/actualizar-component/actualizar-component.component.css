@@ -1,0 +1,69 @@
+/* Estilo general del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Contenedor del formulario */
+.form-group {
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para las etiquetas */
+label {
+    font-weight: bold;
+    color: #555; /* Color de texto más suave */
+    display: block; /* Para que ocupe toda la línea */
+    margin-bottom: 5px; /* Espacio entre etiqueta y campo */
+}
+
+/* Estilo para los campos de entrada */
+.form-control {
+    width: 100%;
+    padding: 12px; /* Mayor padding para más comodidad */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Color al enfocar */
+    outline: none; /* Sin contorno por defecto */
+}
+
+/* Estilo para el botón */
+.btn {
+    
+    background-color: #007bff; /* Color primario */
+    color: white;
+    padding: 12px 20px; /* Mayor padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Espaciado del botón */
+.col {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+    .form-group {
+        padding: 15px; /* Reducir padding en pantallas pequeñas */
+    }
+
+    .btn {
+        width: 100%; /* Botón ocupa todo el ancho */
+    }
+}

@@ -1,0 +1,28 @@
+
+    
+    <br><br><br>
+    
+    <!--AQUI ESTA EL EMPLEADO HIJO-->
+    <h2>Lista de trabajadores</h2>
+    <app-empleado-hijo-c  *ngFor="let empleado of empleados; let i = index" [empleadoDeLista]="empleado" [indice]="i"></app-empleado-hijo-c>  
+    <!-- estas nuevas declaraciones van al archivo empleado-hijo-c.component.ts -->
+    
+    <!-- let (empleado) of empleados; let i = (index) HACER REFERENCIAS DE ESTAS VARIBALES EN EL COMPONENTE HIJO  [empleadoDeLista]="empleado" y el index de esta forma [indice]="index" -->
+    
+    
+    
+    <!--como este es el componente hijo sera trasladado al archivo app-empleado-hijo-c 
+    Nota: este codigo sera modificado en el archivo app-empleado-hijo-c-->
+    <!--inicio de componente hijo-->
+    <!-- <div class="container">
+    <div class="row">
+        <div class="col">
+          *ngFor Para que la variable emplkeado declarada en empleado model.ts entre en bucle con el array empleados ubicado en app-component.ts-->
+          <!-- <div *ngFor="let empleado of empleados; let i = index"> -->
+            <!--interpolacion de las variables nombre,apellido,cargo y salario. ubicacion en el archivo: empleado.model.ts
+            {{i+1}}: {{empleado.nombre}} {{empleado.apellido}} {{empleado.cargo}} {{empleado.salario}} 
+        </div>
+        </div>
+    </div>
+    </div> -->
+    <!--fin del componente hijo-->

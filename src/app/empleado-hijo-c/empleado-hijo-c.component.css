@@ -1,0 +1,64 @@
+/* Archivo styles.css o componente específico CSS */
+
+/* Estilo para el contenedor principal */
+.container {
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 1200px;
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para la fila */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilo para las columnas */
+.col {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Estilo para los elementos dentro del div */
+div > div {
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco */
+}
+
+/* Estilo para la lista sin viñetas */
+ul {
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* Estilo para los elementos de la lista */
+li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333; /* Color de texto gris oscuro */
+}
+
+/* Estilo para el texto de los empleados */
+div > div > span {
+    font-weight: bold;
+    color: #007bff; /* Color de texto azul */
+}
+
+/* Estilo para el componente app-caracteristicas-empleados-c */
+app-caracteristicas-empleados-c {
+    margin-top: 10px;
+}
+.btn-primary {
+    transition: opacity 0.3s; /* Transición suave para el efecto */
+    border: none;
+}
+
+.btn-primary:hover {
+    opacity: 0.5 ; /* Cambia la opacidad al pasar el mouse */
+}

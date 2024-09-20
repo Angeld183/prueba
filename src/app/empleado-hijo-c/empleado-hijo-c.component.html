@@ -1,0 +1,31 @@
+<!-- inicio de componente hijo -->
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+          <!-- *ngFor Para que la variable emplkeado declarada en empleado model.ts entre en bucle con el array empleados ubicado en app-component.ts -->
+            <div>
+            <!-- interpolacion de las variables nombre,apellido,cargo y salario. ubicacion en el archivo: empleado.model.ts -->
+            
+            <!-- lo que se hizo fue  declarar en la directiva input en el archivo empleado-hijo-component.ts las nuevas formas de llamar la i que en este casoo ahora es indice y empleado que ahora es empleadoDeLista.-->
+            {{indice+1}}: Nombre: {{empleadoDeLista.nombre}} | Apellido: {{empleadoDeLista.apellido}} | Cargo:  {{empleadoDeLista.cargo}} | Salario: {{empleadoDeLista.salario}}
+            <a [routerLink]="['/actualiza',indice]" routerLinkActive="router-link-active" [queryParams]="{accion:'1'}">
+                <button class="btn btn-primary" style="background: rgb(33, 119, 248); color: #fff; margin-left: 900px;">Modificar</button>
+
+            </a>   
+                <a [routerLink]="['/actualiza',indice]" routerLinkActive="router-link-active" [queryParams]="{accion:'2'}">
+                <button class="btn btn-primary" style="background: rgb(248, 33, 33); color: #fff; margin-left: 20px;">Eliminar</button>
+
+        </a>
+            <ul style="list-style: none;">
+                <li *ngFor="let caracteristica of arrayCaracteristicas">{{caracteristica}}</li>
+            </ul>
+
+            <app-caracteristicas-empleados-c (caracteristicasEmpleados)="agregarCaracteristica($event)"></app-caracteristicas-empleados-c>
+            
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin del componente hijo -->

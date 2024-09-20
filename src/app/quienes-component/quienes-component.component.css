@@ -1,0 +1,35 @@
+/* Estilo general de la sección */
+section {
+    background-color: #f4f4f4; /* Fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 800px; /* Ancho máximo */
+    margin: 20px auto; /* Centrado en la página */
+}
+
+/* Estilo del encabezado */
+h1 {
+    color: #222222; /* Color primario */
+    font-size: 2em; /* Tamaño de fuente grande */
+    margin-bottom: 15px; /* Espacio inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo de los párrafos */
+p {
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+    section {
+        padding: 15px; /* Reducir padding en pantallas pequeñas */
+    }
+    
+    h1 {
+        font-size: 1.8em; /* Ajustar tamaño de fuente */
+    }
+}
